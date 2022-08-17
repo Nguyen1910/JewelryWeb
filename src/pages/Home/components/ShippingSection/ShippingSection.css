@@ -1,0 +1,29 @@
+.container{
+    max-width: 1200px;
+}
+
+.shipping_section {
+  margin-top: 4rem;
+}
+
+.shipping_inner {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.single_shipping {
+}
+
+.shipping_icon {
+    margin-right: 20px;
+    font-size: 25px;
+    color: rgb(15, 130, 15);
+}
+
+.shipping_text h3{
+    margin-bottom: 9px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+}

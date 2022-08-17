@@ -1,0 +1,29 @@
+.banner_container{
+
+}
+
+.single_banner{
+
+}
+
+.banner_text{
+    top: 66px;
+    left: 65px;
+    right: 18px;
+}
+
+.banner_text h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 48px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    color: white;
+}
+
+.banner_text p {
+    font-size: 14px;
+    color: #c2c2c2 !important;
+    margin-bottom: 0;
+    font-weight: 400;
+}

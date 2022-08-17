@@ -1,0 +1,144 @@
+.header_top{
+    background-color: #6a7964;
+    height: 40px;
+}
+
+.header_top_inner{
+  
+}
+
+.header_contact_info{
+}
+
+.header_social ul{
+    margin-top: 1rem;
+}
+
+.header_social ul li{
+    margin-right: 12px;
+}
+
+.language_currency select option{
+    color: black !important;
+}
+
+.form-select{
+    padding-right: 2rem;
+}
+
+.main_header {
+    padding: 30px 0;
+}
+
+.header_container{
+
+}
+
+.header_logo{
+    height: 100px;
+}
+
+.offcanvas-title{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.cart_item {
+    overflow: hidden;
+    padding: 4px 0 20px;
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_img {
+    width: 90px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+}
+
+.cart_img:hover {
+    border-color: #6a7964;
+}
+
+.cart_info {
+    width: 63%;
+}
+
+.cart_info a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.cart_info a:hover {
+    color: #6a7964;
+}
+
+.cart_info p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cart_info p span {
+    font-weight: 700;
+}
+
+.cart_remove{
+
+}
+
+.cart_remove a {
+    font-size: 15px;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+}
+
+.cart_remove a:hover {
+    color: #6a7964;
+}
+
+.mini_cart_table {
+    padding: 23px 0;
+}
+
+.cart_total span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cart_total span.price {
+    font-weight: 700;
+}
+
+.cart_button:first-child {
+    margin-bottom: 15px;
+}
+
+.cart_button a {
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    background: #eef0f1;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 13px 0px 11px;
+    border: 1px solid #ededed;
+    color: black;
+}
+
+.cart_button a:hover {
+    background: #6a7964;
+    border-color: #6a7964;
+    color: #fff;
+}

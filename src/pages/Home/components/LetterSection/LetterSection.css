@@ -1,0 +1,61 @@
+.section_title h2 {
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #6a7964;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.newsletter_text h3 {
+    font-size: 30px;
+    line-height: 28px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.newsletter_text p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: 400;
+    margin: 0;
+}
+
+.newsletter_subscribe form {
+    position: relative;
+    width: 670px;
+    border-bottom: 1px solid #999999;
+}
+
+.newsletter_subscribe form input {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 400;
+    height: 52px;
+    padding: 0 110px 0 37px;
+}
+
+.newsletter_subscribe form i {
+    position: absolute;
+    left: 0;
+    top: 49%;
+    transform: translatey(-50%);
+    font-size: 18px;
+}
+
+.newsletter_subscribe form button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: inherit;
+}

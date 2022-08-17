@@ -1,0 +1,21 @@
+.section_title h2 {
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #6a7964;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.all_product a {
+    font-size: 16px;
+    line-height: 18px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.mySwiper {
+  max-height: 450px;
+}
+
