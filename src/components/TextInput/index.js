@@ -12,6 +12,7 @@ const Index = ({
   name,
   onChange,
   value,
+  icon,
 }) => {
   return (
     <div
@@ -23,14 +24,17 @@ const Index = ({
           {label}
         </label>
       )}
-      <input
-        type={type}
-        placeholder={placeholder}
-        className="input_text rounded border-1 w-100"
-        name={name}
-        value={value}
-        onChange={onChange}
-      />
+      <div className="d-flex align-items-center rounded border border-2 w-100 px-3 py-1">
+        <input
+          type={type}
+          placeholder={placeholder}
+          className="bg-transparent border-0 w-100 pe-3 py-1"
+          name={name}
+          value={value}
+          onChange={onChange}
+        />
+        {icon && icon}
+      </div>
     </div>
   );
 };

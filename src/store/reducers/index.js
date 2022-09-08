@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
-import songReducer from "./song";
+import authReducer from "./auth";
 import cartReducer from "./cart";
 
 const rootReducer = combineReducers({
-  songReducer,
+  authReducer,
   cartReducer,
 });
 

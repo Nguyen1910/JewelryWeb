@@ -1,0 +1,49 @@
+.transport {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #ddd;
+  border: 5px solid #ddd;
+  margin-right: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.transport:last-child {
+  margin-right: 0;
+}
+
+.transport:first-child::before {
+  display: none;
+  left: 0;
+}
+
+.transport::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 5px;
+  position: absolute;
+  background-color: #ddd;
+  left: -155px;
+}
+
+.transport.active {
+  border-color: green;
+  color: green;
+}
+
+.transport.active::before {
+  background-color: green;
+}
+
+.transport span {
+  position: absolute;
+  bottom: -50px;
+  font-size: 18px;
+  width: 150px;
+  left: 0;
+}

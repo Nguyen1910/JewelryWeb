@@ -8,12 +8,12 @@ import "./productCard.css";
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
-  console.log(useSelector((state) => state.cartReducer.cartArr));
+  // console.log(useSelector((state) => state.cartReducer.cartArr));
   return (
     <>
       <div className="product_thumb">
         <div className="w-100 bg-image">
-          <Link to={`product/${product.id}`}>
+          <a href={`shop/product/${product.id}`}>
             <img
               onError={(e) => {
                 e.target.classList.add("d-none");
@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
               alt="consectetur"
               style={{ objectFit: "cover" }}
             />
-          </Link>
+          </a>
         </div>
         <div className="product_action">
           <ul>
@@ -85,7 +85,7 @@ const ProductCard = ({ product }) => {
             </ul>
           </div>
           <h4 className="product_name px-2">
-            <a href="product-details.html">{product.name}</a>
+            <a href={`shop/product/${product.id}`}>{product.name}</a>
           </h4>
           <div className="price_box">
             <span className="current_price">{convertPrice(product.price)}</span>
@@ -93,7 +93,7 @@ const ProductCard = ({ product }) => {
           </div>
           <div
             className="add_to_cart"
-            onClick={() => dispatch(buyProduct(product))}
+            onClick={() => dispatch(buyProduct({ ...product, quantity: 1 }))}
           >
             <div
               className="btn btn-primary"

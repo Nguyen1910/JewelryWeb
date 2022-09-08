@@ -17,6 +17,7 @@ const Index = () => {
       setProducts([...data]);
     };
     getProduct();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
   return (
     <>

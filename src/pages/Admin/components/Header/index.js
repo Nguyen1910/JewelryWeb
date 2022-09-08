@@ -1,19 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { removeUser } from "../../store/actions/auth";
-import { deleteProduct } from "../../store/actions/cartAction";
-import { URL_IMG_PRODUCT } from "../../ultis/configURL";
-import { convertPrice } from "../../ultis/convertPrice";
-import { totalCart } from "../../ultis/totalCart";
+import { removeUser } from "../../../../store/actions/auth";
+import { deleteProduct } from "../../../../store/actions/cartAction";
+import { URL_IMG_PRODUCT } from "../../../../ultis/configURL";
+import { convertPrice } from "../../../../ultis/convertPrice";
+import { totalCart } from "../../../../ultis/totalCart";
 import "./Header.css";
 
 const MENU_LIST = [
-  { title: "HOME", linkTo: "/home" },
-  { title: "SHOP", linkTo: "/shop" },
-  { title: "SALE", linkTo: "/sale" },
-  { title: "PAGES", linkTo: "/pages" },
-  { title: "BLOG", linkTo: "/blog" },
+  { title: "ORDER", linkTo: "/admin/order" },
+  { title: "PRODUCT", linkTo: "/admin/product" },
 ];
 
 function Header(props) {
@@ -203,11 +200,6 @@ function Header(props) {
                             </a>
                           </li>
                           <li>
-                            <a className="dropdown-item" href="/order">
-                              Order
-                            </a>
-                          </li>
-                          <li>
                             <a
                               className="dropdown-item"
                               href="#"
@@ -229,47 +221,6 @@ function Header(props) {
                       )}
                     </ul>
                   </div>
-                </li>
-                <li className="position-relative">
-                  <a href="#" className="text-dark">
-                    <i className="fa-solid fa-heart"></i>
-                  </a>
-                  <span
-                    className="position-absolute border border-1 border-dark rounded-circle text-white d-flex justify-content-center align-items-center"
-                    style={{
-                      height: "18px",
-                      width: "18px",
-                      fontSize: "12px",
-                      top: "-20%",
-                      right: "-30%",
-                      backgroundColor: "#000",
-                    }}
-                  >
-                    2
-                  </span>
-                </li>
-                <li
-                  className="position-relative"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasWithBothOptions"
-                  aria-controls="offcanvasWithBothOptions"
-                >
-                  <a href="#" className="text-dark">
-                    <i className="fa-solid fa-cart-shopping"></i>
-                  </a>
-                  <span
-                    className="position-absolute border border-1 border-dark rounded-circle text-white d-flex justify-content-center align-items-center"
-                    style={{
-                      height: "18px",
-                      width: "18px",
-                      fontSize: "12px",
-                      top: "-20%",
-                      right: "-30%",
-                      backgroundColor: "#000",
-                    }}
-                  >
-                    {cart && cart.length}
-                  </span>
                 </li>
               </ul>
             </div>
